@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="/Project-1/index.css">
+</head>
+<body>
+   <div id="MyClockDisplay" class="clock"></div>
+    <script type="text/javascript">
+        function showTime(){
+    let d = new Date();
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+    let session = "AM";
+
+    if (h == 0) {
+        h=12;
+    }
+    if (h>12) {
+        h = h-12;
+        session = "PM";
+    }
+    
+    if (h<10) {
+        h= "0"+h;
+    }
+    if (m<10) {
+        m= "0"+m;
+    }
+    if (s<10) {
+        s= "0"+s;
+    }
+    let time = h + ":" +m+ ":" +s+ " " +session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+}
+showTime();
+setInterval(showTime, 1000);
+
+    </script>
+</body>
+</html>

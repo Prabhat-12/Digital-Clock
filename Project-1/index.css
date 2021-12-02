@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(182, 182, 182);
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1)); */
+}
+.clock{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(255 168 6);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 113px;
+    transform: translateX(-50%) translateY(-100%);
+    border-top: 10px solid rgb(252, 3, 3);
+    border-bottom: 10px solid rgb(182 247 5);
+    border-left: 10px solid rgb(9, 180, 248);
+    border-right: 10px solid rgb(253, 7, 220);
+    border-radius: 2px 100px 100px 100px;
+    padding: 30px 30px 30px 30px;
+    text-shadow: -7px -7px 14px black;
+    -webkit-box-reflect: below 17px linear-gradient(transparent, rgb(182 182 182));
+}
